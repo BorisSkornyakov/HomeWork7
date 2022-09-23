@@ -4,13 +4,13 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
-int DataEntry(string message)
+int DataEntry(string message)										//Метод ввода данных
 {
 	Console.Write(message);
 	return Convert.ToInt32(Console.ReadLine());
 }
 
-void FillTwoDimensionalArray(double[,] array)
+void FillTwoDimensionalArray(double[,] array)						//Метод заполнения массива
 {
 	for (int i = 0; i < array.GetLength(0); i++)
 	{
@@ -22,7 +22,7 @@ void FillTwoDimensionalArray(double[,] array)
 }
 
 
-void PrintTwoDimensionalArray(double[,] array)
+void PrintTwoDimensionalArray(double[,] array)						//Метод печати массива
 {
 	for (int i = 0; i < array.GetLength(0); i++)
 	{
@@ -33,7 +33,7 @@ void PrintTwoDimensionalArray(double[,] array)
 		System.Console.WriteLine();
 	}
 }
-System.Console.WriteLine("Задайте размер двухмерного массива");
+System.Console.WriteLine("Задайте размер двумерного массива");
 int rows = DataEntry("Введите количество строк ");
 int columns = DataEntry("Введите количество столбцов ");
 double[,] numbers = new double[rows, columns];

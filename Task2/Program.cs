@@ -34,7 +34,7 @@ void PrintTwoDimensionalArray(int[,] array)								//Метод печати м�
 		System.Console.WriteLine();
 	}
 }
-System.Console.WriteLine("Задайте размер двухмерного массива");
+System.Console.WriteLine("Задайте размер двумерного массива");
 int rows = DataEntry("Введите количество строк ");
 int columns = DataEntry("Введите количество столбцов ");
 int[,] numbers = new int[rows, columns];
