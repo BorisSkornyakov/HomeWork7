@@ -10,7 +10,7 @@ int DataEntry(string message)
 	return Convert.ToInt32(Console.ReadLine());
 }
 
-void FillTwoDimensionalArray(int[,] array)
+void FillTwoDimensionalArray(double[,] array)
 {
 	for (int i = 0; i < array.GetLength(0); i++)
 	{
@@ -21,7 +21,8 @@ void FillTwoDimensionalArray(int[,] array)
 	}
 }
 
-void PrintTwoDimensionalArray(int[,] array)
+
+void PrintTwoDimensionalArray(double[,] array)
 {
 	for (int i = 0; i < array.GetLength(0); i++)
 	{
@@ -35,6 +36,6 @@ void PrintTwoDimensionalArray(int[,] array)
 System.Console.WriteLine("Задайте размер двухмерного массива");
 int rows = DataEntry("Введите количество строк ");
 int columns = DataEntry("Введите количество столбцов ");
-int[,] numbers = new int[rows, columns];
+double[,] numbers = new double[rows, columns];
 FillTwoDimensionalArray(numbers);
 PrintTwoDimensionalArray(numbers);
